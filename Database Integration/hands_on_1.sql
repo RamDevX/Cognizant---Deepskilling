@@ -1,3 +1,4 @@
+DROP DATABASE college_db;
 CREATE DATABASE IF NOT EXISTS college_db;
 USE college_db;
 
