@@ -1,0 +1,36 @@
+### Get all courses
+GET http://127.0.0.1:5000/api/courses/
+
+###
+
+### Get course by ID
+GET http://127.0.0.1:5000/api/courses/1
+
+###
+
+### Create a new course
+POST http://127.0.0.1:5000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "Python Programming",
+    "code": "CS102",
+    "credits": 3
+}
+
+###
+
+### Update a course
+PUT http://127.0.0.1:5000/api/courses/2
+Content-Type: application/json
+
+{
+    "name": "Advanced Python",
+    "code": "CS102",
+    "credits": 4
+}
+
+###
+
+### Delete a course
+DELETE http://127.0.0.1:5000/api/courses/2
