@@ -34,3 +34,4 @@ dist/
 build/
 
 .migrations_cache/
+test.http
