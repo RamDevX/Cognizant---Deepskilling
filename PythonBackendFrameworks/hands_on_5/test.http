@@ -1,0 +1,53 @@
+### Get all courses
+GET http://127.0.0.1:5000/api/courses/
+
+###
+
+### Create a course
+POST http://127.0.0.1:5000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "Database Management Systems",
+    "code": "CS101",
+    "credits": 4
+}
+
+###
+
+### Create another course
+POST http://127.0.0.1:5000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "Operating Systems",
+    "code": "CS102",
+    "credits": 3
+}
+
+###
+
+### Get course by ID
+GET http://127.0.0.1:5000/api/courses/1
+
+###
+
+### Update a course
+PUT http://127.0.0.1:5000/api/courses/1
+Content-Type: application/json
+
+{
+    "name": "Advanced DBMS",
+    "code": "CS101",
+    "credits": 5
+}
+
+###
+
+### Delete a course
+DELETE http://127.0.0.1:5000/api/courses/2
+
+###
+
+### Verify remaining courses
+GET http://127.0.0.1:5000/api/courses/
