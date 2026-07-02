@@ -1,0 +1,58 @@
+### Home
+GET http://127.0.0.1:8000/
+
+###
+
+### Get all courses
+GET http://127.0.0.1:8000/api/courses/
+
+###
+
+### Create Course
+POST http://127.0.0.1:8000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "Database Management Systems",
+    "code": "CS101",
+    "credits": 4
+}
+
+###
+
+### Create Another Course
+POST http://127.0.0.1:8000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "Operating Systems",
+    "code": "CS102",
+    "credits": 3
+}
+
+###
+
+### Get Course by ID
+GET http://127.0.0.1:8000/api/courses/1
+
+###
+
+### Update Course
+PUT http://127.0.0.1:8000/api/courses/2
+Content-Type: application/json
+
+{
+    "name": "Advanced DBMS",
+    "code": "CS101",
+    "credits": 5
+}
+
+###
+
+### Delete Course
+DELETE http://127.0.0.1:8000/api/courses/2
+
+###
+
+### Verify
+GET http://127.0.0.1:8000/api/courses/
