@@ -1,0 +1,17 @@
+### Create Course
+POST http://127.0.0.1:5001/api/courses
+Content-Type: application/json
+
+{
+    "name": "Database Management Systems",
+    "code": "CS101",
+    "credits": 4
+}
+
+###
+
+GET http://127.0.0.1:5001/api/courses
+
+###
+
+GET http://127.0.0.1:5001/api/courses/1

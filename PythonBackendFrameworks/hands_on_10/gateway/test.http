@@ -1,0 +1,50 @@
+### Home
+GET http://127.0.0.1:5000/
+
+###
+
+### Get All Courses
+GET http://127.0.0.1:5000/api/courses
+
+###
+
+### Create Course
+POST http://127.0.0.1:5000/api/courses
+Content-Type: application/json
+
+{
+    "name": "Python Programming",
+    "code": "CS102",
+    "credits": 3
+}
+
+###
+
+### Get Course by ID
+GET http://127.0.0.1:5000/api/courses/1
+
+###
+
+### Get All Students
+GET http://127.0.0.1:5000/api/students
+
+###
+
+### Create Student
+POST http://127.0.0.1:5000/api/students
+Content-Type: application/json
+
+{
+    "name": "Alice",
+    "email": "alice@example.com"
+}
+
+###
+
+### Enroll Student
+POST http://127.0.0.1:5000/api/students/1/enroll
+Content-Type: application/json
+
+{
+    "course_id": 1
+}

@@ -1,0 +1,69 @@
+### Home
+GET http://127.0.0.1:5002/
+
+###
+
+### Get All Students
+GET http://127.0.0.1:5002/api/students
+
+###
+
+### Create Student
+POST http://127.0.0.1:5002/api/students
+Content-Type: application/json
+
+{
+    "name": "Raxon",
+    "email": "raxon@example.com"
+}
+
+###
+
+### Create Another Student
+POST http://127.0.0.1:5002/api/students
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "john@example.com"
+}
+
+###
+
+### Enroll Student 1 in Course 1
+POST http://127.0.0.1:5002/api/students/1/enroll
+Content-Type: application/json
+
+{
+    "course_id": 1
+}
+
+###
+
+### Enroll Student 2 in Course 1
+POST http://127.0.0.1:5002/api/students/2/enroll
+Content-Type: application/json
+
+{
+    "course_id": 1
+}
+
+###
+
+### Enroll Student 1 in Invalid Course
+POST http://127.0.0.1:5002/api/students/1/enroll
+Content-Type: application/json
+
+{
+    "course_id": 999
+}
+
+###
+
+### Enroll Invalid Student
+POST http://127.0.0.1:5002/api/students/999/enroll
+Content-Type: application/json
+
+{
+    "course_id": 1
+}
