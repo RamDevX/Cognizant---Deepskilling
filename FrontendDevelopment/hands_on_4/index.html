@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to the Student Portal</h2>
+
+            <p>
+                Manage your courses, track your progress,
+                and stay connected with your academic journey.
+            </p>
+
+            <button>Explore Courses</button>
+        </section>
+
+        <section class="courses">
+
+            <h2>Available Courses</h2>
+
+            <input
+                type="text"
+                id="search-courses"
+                placeholder="Search courses..."
+            >
+
+            <button id="sort-btn">
+                Sort by Credits
+            </button>
+
+            <div class="course-grid"></div>
+
+            <p id="total-credits"></p>
+
+            <div id="selected-course"></div>
+
+        </section>
+
+        <section class="profile">
+
+            <h2>Student Profile</h2>
+
+            <div class="profile-card">
+
+                <img
+                    src="https://via.placeholder.com/150"
+                    alt="Student"
+                >
+
+                <div class="profile-info">
+
+                    <h3>Raxon</h3>
+
+                    <p><strong>Department:</strong> Computer Science</p>
+
+                    <p><strong>Semester:</strong> 7</p>
+
+                    <p><strong>Email:</strong> raxon@example.com</p>
+
+                    <button>Edit Profile</button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="notifications">
+
+    <h2>Notifications</h2>
+
+    <button id="load-notifications">
+        Load Notifications
+    </button>
+
+    <div id="notification-list">
+
+    </div>
+
+</section>
+
+    </main>
+    <form id="profile-form">
+
+    <input
+        type="text"
+        id="student-name"
+        placeholder="Student Name"
+        value="Raxon"
+    >
+
+    <input
+        type="email"
+        id="student-email"
+        placeholder="Email"
+        value="raxon@example.com"
+    >
+
+    <input
+        type="number"
+        id="semester"
+        placeholder="Semester"
+        value="7"
+    >
+
+    <button type="submit">
+        Save Profile
+    </button>
+
+</form>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
